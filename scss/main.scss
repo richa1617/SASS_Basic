@@ -1,6 +1,43 @@
-$test: yellow
-;
+$color-primary: #CDC2AE;
+$color-secondary: #116A7B;
 
-body {
-background-color: $test;
+$font-color:#0E2954;
+
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav {
+    background-color: $color-primary;
+    
+    ul li {
+        list-style: none;
+    }
+     
+    a {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+        
+        &:hover {
+            color: color
+        }
+    }
+}
+@mixin headingStyles($fontSize){
+    font-size: $fontSize;
+    color: $color-secondary;
+    text-align: center;
+}
+
+.banner h1 {
+    @include headingStyles($font-lg);
+  
+   
+}
+
+.footer h3 {
+    @include headingStyles($font-md);
+  
+   
 }
