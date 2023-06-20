@@ -1,0 +1,11 @@
+
+
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.63.4"
+  },
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/main.css"
+}
+}
